@@ -105,6 +105,9 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Menebalkan Teks](#menebalkan-teks-1)
             - [Memberi Bayangan pada teks](#memberi-bayangan-pada-teks)
             - [Latihan Formatting](#latihan-formatting-1)
+        - [Memberi Background Terhadap Element HTML](#member-background-terhadap-element-html)
+            - [Menggunakan Warna Sebagai Background](#menggunakan-warna-sebagai-background)
+            - [Menggunakan Gambar Sebagai Background](#menggunakan-gambar-sebagai-background)
         - [Memberi Bayangan Terhadap Element HTML](#memberi-bayangan-terhadap-element-html)
             - [Kegunaan Bayangan Element HTML](#kegunaan-bayangan-element-html)
             - [Latihan Menerapkan Bayangan pada Element](#latihan-menerapkan-bayangan-pada-element)
@@ -135,7 +138,6 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Universal Selector](#universal-selector)
             - [Latihan CSS Selektor](#latihan-css-selektor)
         - [Membuat Variabel di CSS](#membuat-variabel-di-css)
-        - [Membuat background suatu element menjadi gambar](#membuat-background-suatu-element-menjadi-gambar) <!-- Dibiarkan dengan alasan: ?? -->
         - [Menganti Font Family Menggunakan Google Font](#menganti-font-family-menggunakan-google-font)
         - [Membuat Animasi Sederhana](#membuat-sederhana-animasi)
         - [Membuat Tombol Navigasi](#membuat-tombol-navigasi)
