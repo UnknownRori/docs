@@ -155,7 +155,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Penjelasan dari `document.write`](#penjelasan-dari-documentwrite)
             - [Penjelasan dari `alert`](#penjelasan-dari-alert)
             - [Membuka Developer Tools Browser](#membuka-developer-tools-browser)
-        - [Memisahkan Kode JavaScript Menjadi File](#memisahkan-kode-javascript-menjadi-file)
+        - [Memisahkan Kode JavaScript Menjadi File Tersendiri](#memisahkan-kode-javascript-menjadi-file-tersendiri)
         - [Tipe Data di JavaScript](#tipe-data-di-javascript)
             - [String](#string)
             - [Char](#char)
