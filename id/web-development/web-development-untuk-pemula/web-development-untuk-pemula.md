@@ -129,7 +129,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Membuat Halaman Login](#membuat-halaman-login)
     - [CSS Tingkat mengengah](#css-tingkat-menengah)
         - [Pendalaman CSS Selektor](#pendalaman-css-selektor)
-            - [IDSselector](#id-selector)
+            - [ID Sselector](#id-selector)
             - [Attribute Selector](#attribute-selector)
             - [Combinator Selector](#combinator-selector)
             - [Universal Selector](#universal-selector)
