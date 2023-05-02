@@ -231,3 +231,38 @@ Untuk selanjutnya saya akan asumsikan anda sedikit familiar dengan text editor y
 ## [Pengenalan HTML](#daftar-isi)
 
 ### Apa itu HTML?
+
+HTML atau HyperText Markup Langauge merupakan markup yang telah distandarisasi untuk menampilkan konten di browser. Browser akan menerima dokumen HTML dari server atau dari file lokal lalu ditampilkan ke browser. HTML ini disimpan dengan bentuk file extensi `.html`.
+
+HTML juga dapat menyematkan program yang ditulis dalam bahasa skrip seperti JavaScript yang dapat membuat konten halaman web lebih menarik, dan juga dapat memasukan CSS untuk mengatur tata letak konten.
+
+#### Asal Muasal HTML
+
+Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee, dan juga seorang kontraktor di CERN (Organisasi Eropa untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi dokumen. Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet. Berners-Lee menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang sama, Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya sejak 1990 dia mendaftar "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah ensiklopedia.
+
+#### Kegunaan HTML
+
+Fungsi utama HTML ialah membangun tampilan halaman website khususnya dibagian _Frontend_.
+
+#### Contoh HTML
+
+Terdapat contoh yang paling sederhana dan anda bisa coba experimen, ingat filenya harus berformat `.html` agar bisa dibuka di browser.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Websiteku:)</title>
+</head>
+<body>
+    <h2>Hai dunia</h2>
+    <p>Ini website pertama ku</p>
+</body>
+</html>
+```
+
+Kalau sudah di save dengan format `.html` lalu seret file tersebut ke browser, lalu muncul seperti ini, kalau sama berarti selamat anda berhasil membuat website pertama anda.
+
+![Hasil contoh diatas](asset/html/contoh-html.png)
+
+### Dasar HTML
