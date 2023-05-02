@@ -201,3 +201,33 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
 5. [Penutup](#penutup)
 
 ## [Pemilihan Text Editor](#daftar-isi)
+
+Sebelum kita memulai belajar web development kita harus memilih text editor kita, ini akan tergantung dengan sistem operasi yang kalian pakai dan bahasa pemrograman yang dipelajari, saya ada beberapa list text editor yang cocok untuk web development, mengapa harus memakai text editor karena kita akan mengetik suatu web dan jarang akan menyentuh aplikasi yang bisa melakukan _Drag and Drop_.
+
+### 1. [Visual Studio Code](https://code.visualstudio.com)
+
+![Fresh Visual Studio Code Interface](asset/pemilihan-text-editor/fresh-vscode.png)
+
+Visual Studio Code atau sering dijuluki VSCode adalah suatu text editor yang berbasis _Chromium_ dan dapat di kostumisasi sesuai keinginan dan bisa menjadi _IDE_ (Integrated Development Enviroment), karena berbasis _Chromium_ saya tidak akan rekomendasikan ini untuk  anda jika anda hanya memiliki _RAM_ yang sangat tipis, tapi kalau anda mempunya _RAM_ seperti 4GB saya rekomendasikan. VSCode ini bisa di-install di Windows, Linux, dan MacOS, saya rekomendasikan ini tetapi kalau punya _RAM_ yang lumayan.
+
+Untuk yang tidak tau _IDE_ itu suatu aplikasi yang membantu dan mempercepat kita dalam melakukan development.
+
+### 2. Notepad
+
+![Notepad](asset/pemilihan-text-editor/notepad.png)
+
+Notepad suatu aplikasi yang dibuat oleh Microsoft untuk mencatat, tetapi bisa dibuat untuk membuat web, aplikasi ini terdapat hampir seluruh sistem operasi Windows, tetapi aplikasi tidak bisa di kostumisasi dan Notepad ini bukan _IDE_, jadi ekspek nanti sedikit sulit, jadi saya tidak akan rekomendasikan ini untuk rencana panjang belajar web development tetapi untuk pertama kali bisa dicoba.
+
+### 3. VI / VIM (VI Improved)
+
+![VIM](asset/pemilihan-text-editor/vim.png)
+
+VIM merupakan aplikasi yang open source yang dibuat oleh komunitas, aplikasi ini sering dijumpai di sistem operasi linux, aplikasi ini dapat di kostumisasi tetapi susah akan pakainya jika belum pernah mengetik tanpa menyentuh mouse, jadi kalau sudah biasa saya bisa rekomendasikan ke anda, kalau tidak anda pilih [Visual Studio Code](#1-visual-studio-code) saja
+
+### Note
+
+Untuk selanjutnya saya akan asumsikan anda sedikit familiar dengan text editor yang anda pilih, dan buku ini akan memberikan contoh memakai [Visual Studio Code](#1-visual-studio-code) dan berasumsi anda juga memakainya juga.
+
+## [Pengenalan HTML](#daftar-isi)
+
+### Apa itu HTML?
