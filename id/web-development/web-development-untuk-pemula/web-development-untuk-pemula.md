@@ -30,7 +30,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
         - [Komentar](#komentar)
         - [Judul/Heading](#judul--heading)
             - [Penjelasan dan Kegunaan Heading](#penjelasan-dan-kegunaan-heading)
-            - [Latihan Membuat Heading](#latihan-Membuat-heading)
+            - [Latihan Membuat Heading](#latihan-membuat-heading)
         - [Paragraf](#paragraf)
             - [Penjelasan dan Kegunaan Paragraf](#penjelasan-dan-kegunaan-paragraf)
             - [Latihan Membuat Paragraf](#latihan-membuat-paragraf)
@@ -233,11 +233,13 @@ Untuk selanjutnya saya akan asumsikan anda sedikit familiar dengan text editor y
 
 ## [Pengenalan HTML](#daftar-isi)
 
-### Apa itu HTML?
+### [Apa itu HTML?](#daftar-isi)
 
-HTML atau HyperText Markup Langauge merupakan markup yang telah distandarisasi untuk menampilkan konten di browser. Browser akan menerima dokumen HTML dari server atau dari file lokal lalu ditampilkan ke browser. HTML ini disimpan dengan bentuk file extensi `.html`.
+HTML atau HyperText Markup Langauge merupakan markup yang telah distandarisasi untuk menampilkan konten di browser. Browser akan menerima dokumen HTML dari [_server_]() atau dari file lokal lalu ditampilkan ke browser. HTML ini disimpan dengan bentuk file extensi `.html`.
 
 HTML juga dapat menyematkan program yang ditulis dalam bahasa skrip seperti JavaScript yang dapat membuat konten halaman web lebih menarik, dan juga dapat memasukan CSS untuk mengatur tata letak konten.
+
+Element merupakan dasar utama dalam HTML yang digunakan untuk menampilkan konten di suatu web browser.
 
 #### Asal Muasal HTML
 
@@ -249,7 +251,7 @@ Fungsi utama HTML ialah membangun tampilan halaman website khususnya dibagian _F
 
 #### Contoh HTML
 
-Terdapat contoh yang paling sederhana dan anda bisa coba experimen, ingat filenya harus berformat `.html` agar bisa dibuka di browser.
+Terdapat contoh yang paling sederhana dan anda bisa coba experimen, ingat filenya harus berformat `.html` agar bisa dibuka di browser, jangan takut saya akan menjelaskannya pelan pelan di bab berikutnya.
 
 ```html
 <!DOCTYPE html>
@@ -268,4 +270,173 @@ Kalau sudah di save dengan format `.html` lalu seret file tersebut ke browser, l
 
 ![Hasil contoh diatas](asset/html/contoh-html.png)
 
-### Dasar HTML
+### [Dasar HTML](#daftar-isi)
+
+#### Peralatan yang dibutuhkan
+
+- Text Editor (VSCode, VIM, Notepad)
+- Web Browser (Firefox, Microsoft Edge, Chrome)
+- Internet (Opsional)
+
+#### HTML Pertamamu
+
+Ini merupakan HTML yang tadi anda buat, kalau belum anda buat anda harus segera melakukannya, untuk mengulang file-nya harus berformat `.html` dan di _Drag and Drop_ ke browser untuk melihatnya.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Websiteku:)</title>
+</head>
+<body>
+    <h2>Hai dunia</h2>
+    <p>Ini website pertama ku</p>
+</body>
+</html>
+```
+
+##### Element `<!DOCTYPE html>`
+
+Element `<!DOCTYPE html>` ini menandakan bahwa file text ini merupakan file HTML, ini sangat penting karena ini memberitahu kepada web browser tanpa harus diberitahu oleh [_server_]().
+
+##### Element `<html>`
+
+Element `<html>` merupakan induk dari semua element HTML di dokumen HTML, element lain seperti `<h2>` harus didalamnya `<html>` contohnya.
+
+Yang salah
+
+```html
+<!DOCTYPE html>
+
+<h2>Halo</h2>
+
+<html lang="en">
+<head>
+    <title>Websiteku:)</title>
+</head>
+<body>
+    <h2>Hai dunia</h2>
+    <p>Ini website pertama ku</p>
+</body>
+</html>
+```
+
+Element ini juga menerima _Attribute_ `lang` untuk menandakan bahasa apa yang digunakan di dokumen HTML, _Attribute_ akan dijelaskan dibagian [Struktur _Element_](#struktur-element).
+
+##### Element `<title>`
+
+Element `<title>` merupakan element untuk memberi nama suatu halaman website, element ini termasuk dengan metadata atau informasi penting disuatu halaman website, dan harus diletak-kan didalam `<head>`, kalau kurang jelas dibawah ini ada gambar contoh dimana nama suatu halaman website.
+
+![Nama halaman website](asset/html/hightlight-title.png)
+
+##### Element `<head>`
+
+Element `<head>` merupakan element yang menyimpan semua metadata atau informasi penting disuatu halaman website, contoh `<title>`, `<script>` untuk JavaScript, atau CSS (Nanti akan dijelaskan lebih dalam di bab CSS).
+
+##### Element `<body>`
+
+Element `<body>` merupakan element yang menyimpan semua konten HTML seperti `<p>`, `<h2>`, dll.
+
+#### [Struktur Element](#daftar-isi)
+
+Element memiliki berbagai bagian, mulai dari tag, attribute, id, dan class, sebenarnya id dan class itu attribute tetapi mereka adalah hal yang istimewa dan nanti diselanjutnya kita akan sering memakainya, untuk saat ini bisa id, dan class bisa diabaikan terlebih dahulu.
+
+```html
+<p>
+    Lorem ipsum
+</p>
+```
+
+`<p>` merupakan tag pembuka dan `</p>` merupakan tag penutup.
+
+```html
+<html lang='en'>
+</html>
+```
+
+`lang` merupakan attribute dan `en` merupakan isi dari attribute tersebut.
+
+```html
+<p id='some'>Something</p>
+```
+
+Pasti sudah jelas ya `id` merupakan id dan `some` merupakan konten `id`, `id` sering digunakan untuk memberi nama unik kepada element HTML, `id` ini masih termasuk dengan attribute.
+
+```html
+<p class="red">something</p>
+<p class="red something">something</p>
+```
+
+Pasti sudah jelas ya hampir mirip dengan yang `id`, bedanya tidak harus unik dengan element lain dan juga bisa memiliki isi lebih dari satu dengan spasi sebagai pemisah.
+
+Element HTML dapat memiliki attribute, id, dan class tetapi tidak boleh memiliki attribute yang sama semisal ada element memiliki 2 attribute yang namanya sama itu tidak boleh tetapi kalau misal attribute yang pertama `lang` dan attribute kedua `aria-label` itu tidak apa apa.
+
+#### [Komentar](#daftar-isi)
+
+Seluruh bahasa pemrograman pasti memiliki komentar, komentar ini digunakan untuk memberikan informasi lebih lanjut dari potongan skrip/kode, dan HTML juga memiliki fitur ini walaupun dia markup bukan bahasa pemrograman. Untuk membuat komentar di HTML anda harus mengetik `<!---` di awal baris dan lalu ditengahnya konten yang anda ingin tulis lalu diakhiri dengan `--->` tetapi bisa ditulis di baris berikutnya untuk membuat komentar multi baris, contohnya seperti ini.
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Websiteku:)</title>
+</head>
+<body>
+    <!-- Ini tidak akan ditampilkan di browser -->
+    <h2>Hai dunia</h2>
+    <p>Ini website pertama ku</p>
+    <!-- Ini
+    Juga
+    Tidak
+    Akan
+    Ditampilkan -->
+</body>
+</html>
+```
+
+#### [Judul/Heading](#daftar-isi)
+
+##### Penjelasan dan Kegunaan Heading
+
+Judul atau sering disebut Heading merupakan element HTML yang digunakan untuk konten judul, element ini ada 6 jenis dan itu hanya merubah angkanya saja, mulai dari yang paling besar `<h1>` sampai `<h6>` yang terkecil, contohnya seperti ini.
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Contoh Heading</title>
+</head>
+<body>
+    <h1>Judul</h1>
+    <h2>Judul</h2>
+    <h3>Judul</h3>
+    <h4>Judul</h4>
+</body>
+</html>
+```
+
+##### Latihan membuat Heading
+
+Latihan pertama anda membuat contoh seperti yang dibawah ini.
+
+![Target latihan](asset/html/latihan-heading.png)
+
+#### [Paragraf](#daftar-isi)
+
+##### Penjelasan dan Kegunaan Paragraf
+
+Sesuai namanya element ini digunakan untuk membuat paragraf, penulisan element paragraf ini sangat sederhana `<p>Konten Kita</p>`, contoh yang paling sederhana sudah ada di bagian [HTML Pertamamu](#html-pertamamu).
+
+##### Latihan membuat paragraf
+
+Latihan kedua anda membuat contoh seperti yang dibawah ini.
+
+![Target Latihan Paragraf](asset/html/latihan-paragraf.png)
+
+##### Project halaman data diri
+
+Project pertama anda adalah membuat halaman web yang berisikan data diri anda seperti nama, alamat, sosial media, dll. Anda boleh berkreasi dengan ilmu yang anda dapat dari materi sebelumnya.
+
+#### [Formatting](#daftar-isi)
