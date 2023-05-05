@@ -295,6 +295,8 @@ Ini merupakan HTML yang tadi anda buat, kalau belum anda buat anda harus segera 
 </html>
 ```
 
+Kalau anda mengganti teks diatas anda harus melakukan _refresh_ di tab tersebut dengan menekan tombol `F5`.
+
 ##### Element `<!DOCTYPE html>`
 
 Element `<!DOCTYPE html>` ini menandakan bahwa file text ini merupakan file HTML, ini sangat penting karena ini memberitahu kepada web browser tanpa harus diberitahu oleh [_server_]().
@@ -384,8 +386,11 @@ Seluruh bahasa pemrograman pasti memiliki komentar, komentar ini digunakan untuk
 </head>
 <body>
     <!-- Ini tidak akan ditampilkan di browser -->
+
     <h2>Hai dunia</h2>
+
     <p>Ini website pertama ku</p>
+
     <!-- Ini
     Juga
     Tidak
@@ -435,8 +440,141 @@ Latihan kedua anda membuat contoh seperti yang dibawah ini.
 
 ![Target Latihan Paragraf](asset/html/latihan-paragraf.png)
 
+<!-- Spoiler -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Latihan Formatting</title>
+    </head>
+
+    <body>
+        <p>Hai nama ku ...</p>
+        <p>Aku sedang belajar web development</p>
+    </body>
+
+</html> -->
+
 ##### Project halaman data diri
 
 Project pertama anda adalah membuat halaman web yang berisikan data diri anda seperti nama, alamat, sosial media, dll. Anda boleh berkreasi dengan ilmu yang anda dapat dari materi sebelumnya.
 
 #### [Formatting](#daftar-isi)
+
+HTML mempunyai fitur untuk menformat konten kita dengan menggunakan element yang spesifik dan lalu didalam element spesifik tersebut kita taruh konten yang kita ingin format.
+
+##### Memiringkan Teks
+
+Yang paling pertama memiringkan teks menggunakan element `<i>`. Contoh :
+
+```html
+<!-- Element HTML Lain -->
+<i>Hai</i>
+
+<i>
+    Halo
+    <h1>Dunia!</h1>
+</i>
+<!-- Element HTML Lain -->
+```
+
+![Hasil dari kode diatas](asset/html/formatting-italic.png)
+
+##### Menebalkan Teks
+
+Untuk menebalkan teks menggunakan element HTML anda bisa menggunakan element `<bold>`, cara penggunaannya sama seperti yang [Memiringkan Teks](#memiringkan-teks)
+
+```html
+<!-- Element HTML Lain -->
+
+<b>Hai</b>
+
+<b>
+    Halo
+    <h1>Dunia!</h1>
+</b>
+
+<!-- Element HTML Lain -->
+```
+
+Perlu di-ingat Element _Heading_ (`<h1>`) itu sudah bold jadi kalau dimasukan kedalam element `<b>` tidak akan terjadi apa apa karena sudah bold.
+
+![Hasil dari contoh diatas](asset/html/formatting-bold.png)
+
+##### Membuat Teks Menjadi Kecil
+
+Kita juga bisa membuat teks menjadi kecil dengan menggunakan `<small>`, cara penggunaan sama dengan menebalkan teks. Contoh :
+
+```html
+<!-- Element HTML Lain -->
+
+<small>
+    Halo Dunia
+</small>
+
+<small>
+    <i>Aku membuat website</i>
+    <h1>Halo</h1>
+</small>
+
+<!-- Element HTML Lain -->
+```
+
+##### Warna Teks
+
+Pemberian warna sedikit berbeda dengan cara yang kita pelajari sebelumnya, karena kita akan menggunakan attribute `style`, attribute ini sedikit berbeda dengan _id_ dan _class_, attribute ini isi dipisah dengan `;`, kita akan mempelajari lebih lanjut di bab _CSS_. Contoh penggunaanya seperti ini.
+
+```html
+<!-- Element HTML Lain -->
+
+<i>
+    <h1 style='color: red;'>Hai</h1>
+</i>
+
+<p style="color: blue;">Aku sedang belajar web!</p>
+
+<!-- Element HTML Lain -->
+```
+
+![Contoh dari contoh diatas](asset/html/formatting-color.png)
+
+Perlu di-ingat kalau di style sudah ada isi bernama _`color`_ tidak boleh ada _`color`_ lagi setelah `;`, contohnya
+
+```html
+<!-- Element HTML Lain -->
+
+<h1 style="color: red; color: green;">Warna Merah!</h1>
+
+<!-- Element HTML Lain -->
+```
+
+Hasil diatas akan mengeluarkan warna hijau, jadi warna merahnya keinjak dengan warna hijau.
+
+##### Latihan Formatting
+
+Buatlah halaman website seperti gambar dibawah!
+
+![Latihan Formatting](asset/html/latihan-formatting.png)
+
+<!-- Spoiler -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Latihan Formatting</title>
+    </head>
+
+    <body>
+        <i>
+            <h1>Halo semua!</h1>
+            <p style='color: red'>Ini website pertamaku!</p>
+        </i>
+
+        <h6>Aku sedang belajar!</h6>
+    </body>
+
+</html> -->
+
+#### List/Daftar
+
+Ada dua jenis
