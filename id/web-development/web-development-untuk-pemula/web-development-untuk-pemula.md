@@ -28,7 +28,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Element `<body>`](#element-body)
         - [Struktur _Element_](#struktur-element)
         - [Komentar](#komentar)
-        - [Judul/Heading](#judul--heading)
+        - [Judul/Heading](#judulheading)
             - [Penjelasan dan Kegunaan Heading](#penjelasan-dan-kegunaan-heading)
             - [Latihan Membuat Heading](#latihan-membuat-heading)
         - [Paragraf](#paragraf)
@@ -41,17 +41,19 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Membuat Teks Menjadi Kecil](#membuat-teks-menjadi-kecil)
             - [Warna Teks](#warna-teks)
             - [Latihan Formatting](#latihan-formatting)
-        - [List/Daftar](#list--daftar)
-            - [Kegunaan List](#kegunaan-list)
-            - [Latihan List](#latihan-daftar)
+        - [List/Daftar](#listdaftar)
+            - [Penjelasan dan Kegunaan List](#penjelasan-dan-kegunaan-list)
+            - [Ordered List](#ordered-list)
+            - [Unordered List](#unordered-list)
+            - [Latihan List](#latihan-list)
         - [Link](#link)
             - [Penjelasan, Kegunaan dan Fitur Link](#penjelasan-kegunaan-dan-fitur-link)
             - [Latihan Membuat Link](#latihan-membuat-link)
         - [Tombol](#tombol)
-            - [Kegunaan Tombol](#kegunaan-tombol)
+            - [Penjelasan dan Kegunaan Tombol](#penjelasan-dan-kegunaan-tombol)
             - [Latihan Membuat Tombol](#latihan-membuat-tombol)
         - [Tabel](#tabel)
-            - [Kegunaan Tabel](#kegunaan-tabel)
+            - [Penjelasan dan Kegunaan Table](#penjelasan-dan-kegunaan-table)
             - [Latihan Tabel](#latihan-tabel)
             - [Project Halaman Daftar Film Bioskop](#project-halaman-daftar-film-bioskop)
         - [Mengambil Masukan Pengguna dengan Form dan Input](#mengambil-masukan-pengguna-dengan-dengan-form-dan-input)
@@ -60,7 +62,6 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Macam-Macam Jenis Input](#macam-macam-jenis-input)
             - [Project Halaman Login](#project-halaman-login)
         - [Pengelompokan dengan `<div>`](#pengelompokan-dengan-div)
-            - [Latihan Tabel](#latihan-tabel)
             - [Kegunaan Pengelompokan](#kegunaan-pengelompokan)
             - [Latihan Pengelompokan](#latihan-pengelompokan)
         - [Memberi Icon di Tab Browser Kita](#memberi-icon-di-tab-browser-kita)
@@ -215,6 +216,8 @@ Visual Studio Code atau sering dijuluki VSCode adalah suatu text editor yang ber
 
 Untuk yang tidak tau _IDE_ itu suatu aplikasi yang membantu dan mempercepat kita dalam melakukan development.
 
+Download : <https://code.visualstudio.com>
+
 ### 2. Notepad
 
 ![Notepad](asset/pemilihan-text-editor/notepad.png)
@@ -226,6 +229,14 @@ Notepad suatu aplikasi yang dibuat oleh Microsoft untuk mencatat, tetapi bisa di
 ![VIM](asset/pemilihan-text-editor/vim.png)
 
 VIM merupakan aplikasi yang open source yang dibuat oleh komunitas, aplikasi ini sering dijumpai di sistem operasi linux, aplikasi ini dapat di kostumisasi tetapi susah akan pakainya jika belum pernah mengetik tanpa menyentuh mouse, jadi kalau sudah biasa saya bisa rekomendasikan ke anda, kalau tidak anda pilih [Visual Studio Code](#1-visual-studio-code) saja
+
+### [Notepad++](https://notepad-plus-plus.org/)
+
+![Notepad++](asset/pemilihan-text-editor/notepadplusplus.png)
+
+Notepad merupakan apliksi open source yang dibuat komunitas untuk menganti [Notepad](#notepad), aplikasi ini dapat di kostumisasi sesuai selera dan sangat ringan, cocok untuk awal belajar
+
+Download : <https://notepad-plus-plus.org/>
 
 ### Note
 
@@ -556,25 +567,151 @@ Buatlah halaman website seperti gambar dibawah!
 
 ![Latihan Formatting](asset/html/latihan-formatting.png)
 
-<!-- Spoiler -->
-<!-- <!DOCTYPE html>
-<html lang="en">
+#### [List/Daftar](#daftar-isi)
 
-    <head>
-        <title>Latihan Formatting</title>
-    </head>
+##### Penjelasan dan Kegunaan List
 
-    <body>
-        <i>
-            <h1>Halo semua!</h1>
-            <p style='color: red'>Ini website pertamaku!</p>
-        </i>
+Ada dua jenis `Ordered List` dan `Unordered List`, HTML ini diggunakan untuk membuat daftar, penulisannya ada dua jenis yang pertama.
 
-        <h6>Aku sedang belajar!</h6>
-    </body>
+##### Ordered List
 
-</html> -->
+Yang pertama ialah `Ordered List` karena `List` ini menggunakan angka atau huruf seperti halnya di `Microsoft Word` pakai, penulisan `Ordered List` dimulai dengan menuliskan element induk `<ol>` lalu didalamnya isi daftar yang mau kita buat dengan menggunakan `<li>`
 
-#### List/Daftar
+```html
+<!-- Element HTML Lain -->
 
-Ada dua jenis
+<h4>Daftar Makanan</h4>
+
+<ol>
+    <li>Soto Ayam</li>
+    <li>Sate Ayam</li>
+    <li>Soto Sapi</li>
+</ol>
+
+<!-- Element HTML Lain -->
+```
+
+![Contoh dari kode diatas](asset/html/contoh-ordered-list.png)
+
+##### Unordered List
+
+Sama seperti `Ordered List` tetapi menggunakan simbol, penulisannya sama tetapi yang berbeda induknya dengan menggunakan element `<ul>`
+
+```html
+<!-- Element HTML Lain -->
+
+<h4>Daftar Makanan</h4>
+
+<ul>
+    <li>Soto Ayam</li>
+    <li>Sate Ayam</li>
+    <li>Soto Sapi</li>
+</ul>
+
+<!-- Element HTML Lain -->
+```
+
+![Hasil dari kode diatas](asset/html/contoh-unordered-list.png)
+
+##### Latihan List
+
+Buatlah `List` sesuai dengan contoh dibawah ini.
+
+![Target latihan](asset/html/latihan-list.png)
+
+#### [Link](#daftar-isi)
+
+##### Penjelasan, Kegunaan dan Fitur Link
+
+Link atau hyperlink digunakan pindah ke halaman web lain, kalau ditunjuk menggunakan mouse akan membuat cursor berubah menjadi tangan, elementnya `<a>` didalam element tersebut bisa dimasukan element lain atau teks saja, dan tujuannya ditulis didalam attribute `href`. Contoh :
+
+```html
+<!-- Element HTML Lain --> w
+
+<a href="https://google.com">Google</a>
+
+<a href="https://twitter.com">
+    <p>Twitter</p>
+</a>
+
+<a href="https://github.com">
+    <h2>Github</h2>
+</a>
+
+<!-- Element HTML Lain -->
+```
+
+Kita bisa pakai file `.html` kita yang lain, tetapi susah untuk dipakai kalau file `.html` beda folder, kalau satu folder `href` tinggal ditulis seperti ini `./nama-file.html`
+
+![Hasil dari kode diatas](asset/html/contoh-link.png)
+
+Kita bisa menambahkan attribute `target` untuk membuat `Link` kita membuat tab baru.
+
+```html
+<a href="https://google.com" target='_blank'>Google</a>
+```
+
+Kadang kita ingin `Link` kita tidak mengarah kemana mana kita bisa menggunakan `#` didalam attribute `href` tetapi simbol `#` lalu ditambah teks akan membuat lompat ke element yang memiliki attribute id yang sama.
+
+##### Latihan Membuat Link
+
+Latihan kali ini membuat seperti dibawah ini tetapi pastikan linknya membuat tab baru.
+
+![Latihan Link](asset/html/latihan-link.png)
+
+#### Tombol
+
+##### Penjelasan dan Kegunaan Tombol
+
+Sesuai dengan namanya, element ini digunakan untuk membuat tombol, bentuknya `<button>` didalam element ini bisa dimasukan teks langsung ataupun element lain. Contoh :
+
+```html
+<button>
+    <h2>Tombol besar ku</h2>
+</button>
+```
+
+![Hasil dari kode diatas](asset/html/contoh-tombol.png)
+
+##### Latihan Membuat Tombol
+
+Buatlah tombol sesuai dengan contoh dibawah ini
+
+![Latihan Tombol](asset/html/latihan-tombol.png)
+
+#### [Tabel](#daftar-isi)
+
+##### Penjelasan dan Kegunaan Table
+
+`Table` sesuai dengan namanya digunakan untuk membuat tabel, tabel ini memiliki banyak element khusus, jadi kalau masih binggung memakai [List](#listdaftar), jangan lompat kesini dahulu.
+
+Kegunaan tabel ialah untuk menata data menjadi kolom dan baris agar lebih enak dilihat oleh mata. Contoh paling sederhana seperti ini.
+
+```html
+<table border='1'>
+    <tr>
+        <td>No</td>
+        <td>Nama</td>
+        <td>Alamat</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>UnknownRori</td>
+        <td>Sol III</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Alien</td>
+        <td>Sol IV</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Someone</td>
+        <td>Sol III</td>
+    </tr>
+</table>
+```
+
+![Contoh dari hasil diatas](asset/html/contoh-tabel.png)
+
+Pertama-tama buat element induk `<table>`, `<table>` ini dapat diberi attribute `border` untuk memberi tabel kita pembatas antara data. Kita merepresentasikan suatu baris menggunakan `<tr>` dan data kita `<td>`
