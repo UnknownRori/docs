@@ -62,7 +62,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Macam-Macam Jenis Input](#macam-macam-jenis-input)
             - [Project Halaman Login](#project-halaman-login)
         - [Pengelompokan dengan `<div>`](#pengelompokan-dengan-div)
-            - [Kegunaan Pengelompokan](#kegunaan-pengelompokan)
+            - [Penjelasan dan Kegunaan Pengelompokan](#penjelasan-dan-kegunaan-pengelompokan)
             - [Latihan Pengelompokan](#latihan-pengelompokan)
         - [Memberi Icon di Tab Browser Kita](#memberi-icon-di-tab-browser-kita)
             - [Latihan Memberi Icon di Tab Browser](#latihan-memberi-icon-di-tab-browser)
@@ -72,6 +72,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
     - [HTML Tingkat Menengah](#html-tingkat-menengah)
         - [Konsep Semantic HTML](#konsep-semantic-html)
             - [Section](#section)
+            - [Article](#section)
             - [Navigation](#navigation)
             - [Footer](#footer)
             - [Latihan Semantic HTML](#latihan-semantic-html)
@@ -82,7 +83,6 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Audio](#video)
             - [Embedding Situs YouTube](#embedding-situs-youtube)
             - [Latihan Multimedia](#latihan-multimedia)
-        - [Aturan Internasional HTML](#aturan-internasional-html)
         - [Project HTML Tingkat Menengah](#project-html-tingkat-menengah)
             - [Membuat Halaman Blog Sederhana](#membuat-halaman-blog-sederhana)
 3. [Pengenalan CSS](#pengenalan-css)
@@ -714,4 +714,210 @@ Kegunaan tabel ialah untuk menata data menjadi kolom dan baris agar lebih enak d
 
 ![Contoh dari hasil diatas](asset/html/contoh-tabel.png)
 
-Pertama-tama buat element induk `<table>`, `<table>` ini dapat diberi attribute `border` untuk memberi tabel kita pembatas antara data. Kita merepresentasikan suatu baris menggunakan `<tr>` dan data kita `<td>`
+Pertama-tama buat element induk `<table>`, `<table>` ini dapat diberi attribute `border` untuk memberi tabel kita pembatas antara data. Kita merepresentasikan suatu baris menggunakan `<tr>` dan kolom menggunakan element `<td>`, di `<tr>` pertama untuk menandai kalau mereka header kita tidak menggunakan `<td>` tetapi `<th>` element tersebut akan membuat teksnya menjadi tebal.
+
+Untuk membuat 1 kolom memiliki panjang 2 atau lebih kolom anda bisa menggunakan attribute `colspan='2'` di `<td>` ataupun `<th>`, untuk baris menggunakan attribute `rowspan='2'` di `<td>` ataupun `<th>`. Contoh :
+
+```html
+<table border='1'>
+    <tr>
+        <th rowspan='2'>No</th>
+        <th colspan='2'>Data Siswa</th>
+        <th colspan='2'>Kehadiran</th>
+    </tr>
+    <tr>
+        <td>Nama</td>
+        <td>Alamat</td>
+        <td>Hadir</td>
+        <td>Ijin</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Bambang</td>
+        <td>Sungai</td>
+        <td>10</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Subagio</td>
+        <td>Bulan</td>
+        <td>8</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Pamungkas</td>
+        <td>Mars</td>
+        <td>12</td>
+        <td>0</td>
+    </tr>
+</table>
+```
+
+![Hasil dari diatas](asset/html/contoh-tabel-1.png)
+
+##### Latihan Tabel
+
+Buatlah halaman yang sesuai dengan contoh dibawah ini :
+
+![Latihan Tabel](asset/html/latihan-tabel.png)
+
+##### Project Halaman Daftar Film Bioskop
+
+Buatlah halaman website yang memiliki tabel yang memiliki data film, harga, genre, dan jam tayang, dan nama film tersebut merupakan link yang akan mengarah ke halaman review film tersebut.
+
+#### Mengambil Masukan Pengguna dengan Form dan Input
+
+Mengapa kita harus menggunakan `Form` dan `Input` untuk mengambil data yang dikirim oleh user, karena kedua hal tersebut merupakan standar untuk mengambil data karena browser memiliki mode tertentu yang membuat beberapa element bisa menghilang.
+
+##### Aturan Form
+
+Untuk mendapatkan data yang dikirimkan dengan benar element `<input>` kita harus didalam element `<form>` dan memiliki satu tombol bisa menggunakan `<input>` ataupun `<button>` sebagai tombol mengirimkan data. Contoh form yang paling sederhana seperti ini.
+
+```html
+<form action="#">
+    <label for="nama">Nama</label>
+    <input type="text" id='nama' placeholder='Masukan nama anda'>
+    <input type="submit" value="Kirim">
+</form>
+```
+
+![Contoh dari kode diatas](asset/html/contoh-form.png)
+
+Element `<label>` tersebut tidak terlalu penting tetapi element tersebut digunakan untuk memberi nama untuk element `<input>` agar lebih jelas, terdapat attribute `for` di element `<label>` digunakan untuk menandai bahwa `<label>` tersebut untuk `<input>` siapa. dan untuk attribute `placeholder` di element `<input>` digunakan untuk memberi informasi tambahan tepat didalam kotak input tersebut.
+
+##### Kegunaan Input
+
+Kegunaan input ada berbagai macam, mulai dari merekam apa yang diketik oleh pengguna di kotak input, dan juga pilihan.
+
+##### Macam-macam Jenis Input
+
+Ada berbagai macam jenis input, untuk mengganti jenis input menggunakan attribute `type` di element `<input>`. Macam macamnya
+
+- button
+- checkbox
+- radio
+- text
+- email
+- password
+- file
+
+##### Project Halaman Login
+
+Buatlah suatu halaman yang memiliki bentuk seperti halaman login, pastikan memiliki judul, input email, input password, dan jangan lupa tombol untuk login.
+
+#### Pengelompokan dengan `<div>`
+
+##### Penjelasan dan Kegunaan Pengelompokan
+
+Element `<div>` ini digunakan untuk mengelompokan element element HTML agar enak untuk diurus, pemakaiannya sangat mudah seperti element HTML yang lainnya tetapi tidak memberikan efek apapun. Contoh :
+
+```html
+<div>
+    <h2>Mendaftar ke newsletter</h2>
+    <form action="#">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder='Masukan email mu'>
+        <input type="submit" value="Daftar">
+    </form>
+</div>
+```
+
+![Contoh dari kode diatas](asset/html/contoh-div.png)
+
+##### Latihan Pengelompokan
+
+Buatlah 2 `<div>` yang berbeda dan masing masing memiliki tabel, isi tabelnya bebas.
+
+#### Memberi Icon di Tab Browser Kita
+
+Untuk memberi icon di tab browser kita dengan menggunakan `<link>` yang memiliki attribute `rel='shortcut icon`, `href='alamat-gambar'` `type='image/x-icon'`, gambarnya bisa menggunakan format `jpg`, `png` dan `ico`. Contoh :
+
+```html
+<!-- Element HTML lain -->
+<head>
+    <title>Latihan Icon</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+</head>
+<!-- Element HTML lain -->
+```
+
+##### Latihan Memberi Icon di Tab Browser
+
+Buatlah suatu halaman website dengan icon favorit anda.
+
+#### [Project HTML](#daftar-isi)
+
+##### Membuat Artikel
+
+Buatlah website yang memiliki banyak artikel dengan menggunakan ilmu yang anda peroleh di materi sebelumnya, pastikan memiliki postingan lebih dari 3.
+
+##### Membuat Formulir Pemesanan Barang
+
+Buatlah website yang berbentuk formulir pemesanan barang dengan menggunakan element `<form>` dan `<input>`.
+
+### [HTML Tingkat Menengah](#daftar-isi)
+
+#### Konsep Semantic HTML
+
+Semantic HTML adalah element HTML yang memiliki makna seperti `<form>`, `<p>`, `<article>`, `<section>`, `<nav>`, `<footer>`. Element HTML yang tidak bermakna ialah `<span>` dan `<div>`.
+
+Mengapa kita harus menggunakan element HTML yang bermakna? Agar browser tau maksud kita saat browser membuka halaman website yang kita buat, tidak hanya itu `Google` pun menggunakan `Semantic HTML` agar bisa menaruh hasil pencarian website kita diatas.
+
+##### Section
+
+Element ini digunakan untuk membuat bagian didalam halaman website mirip dengan `<div>` tetapi memiliki makna lebih karena element ini memiliki isi `<p>`dan `Heading`.
+
+Contoh `<section>` dipakai :
+
+- Artikel
+- Pembuka
+- Informasi Kontak
+
+Contoh penulisan yang paling sederhana :
+
+```html
+<!-- Element HTML lain -->
+<section>
+    <h1>Web Development itu mudah dipelajari!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nihil ea molestias assumenda architecto ad
+        consectetur autem soluta voluptates omnis. Atque voluptatibus hic praesentium. Itaque iusto quaerat nam
+        nulla illum?</p>
+</section>
+
+<section>
+    <h1>Sedang Belajar Web Development</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nihil ea molestias assumenda architecto ad
+        consectetur autem soluta voluptates omnis. Atque voluptatibus hic praesentium. Itaque iusto quaerat nam
+        nulla illum?</p>
+</section>
+<!-- Element HTML lain -->
+```
+
+Hasilnya tidak ada bedanya dengan menggunakan `<div>`
+
+![Hasil dari kode diatas](asset/html/contoh-semantic-section.png)
+
+#### Article
+
+Element ini mirip dengan `<section>` tetapi lebih memiliki makna karena `<article>` sesuai dengan namanya konten didalamnya pasti tentang artikel.
+
+Element ini sering digunakan untuk membuat :
+
+- Postingan
+- Komentar
+- Artikel
+
+Contoh penggunaan paling sederhana :
+
+```html
+<!-- Element HTML lain -->
+<section>
+    <h1>Web Development itu mudah dipelajari!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nihil ea molestias assumenda architecto ad
+        consectetur autem soluta voluptates omnis. Atque voluptatibus hic praesentium. Itaque iusto quaerat nam
+        nulla illum?</p>
+</section>
+<!-- Element HTML lain -->
+```
