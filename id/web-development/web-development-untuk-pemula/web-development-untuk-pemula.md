@@ -56,7 +56,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Penjelasan dan Kegunaan Table](#penjelasan-dan-kegunaan-table)
             - [Latihan Tabel](#latihan-tabel)
             - [Project Halaman Daftar Film Bioskop](#project-halaman-daftar-film-bioskop)
-        - [Mengambil Masukan Pengguna dengan Form dan Input](#mengambil-masukan-pengguna-dengan-dengan-form-dan-input)
+        - [Mengambil Masukan Pengguna dengan Form dan Input](#mengambil-masukan-pengguna-dengan-form-dan-input)
             - [Aturan Form](#aturan-form)
             - [Kegunaan Input](#kegunaan-input)
             - [Macam-Macam Jenis Input](#macam-macam-jenis-input)
@@ -84,7 +84,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Embedding Situs YouTube](#embedding-situs-youtube)
             - [Latihan Multimedia](#latihan-multimedia)
         - [Project HTML Tingkat Menengah](#project-html-tingkat-menengah)
-            - [Membuat Halaman Blog Sederhana](#membuat-halaman-blog-sederhana)
+            - [Membuat Halaman Blog Sederhana](#membuat-blog-sederhana)
 3. [Pengenalan CSS](#pengenalan-css)
     - [Apa itu CSS?](#apa-itu-css)
         - [Asal Muasal CSS](#asal-muasal-css)
@@ -92,7 +92,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
         - [Contoh CSS](#contoh-css)
     - [Dasar CSS](#dasar-css)
         - [Peralatan yang Dibutuhkan](#peralatan-yang-dibutuhkan-1)
-        - [CSS Pertamamu](#CSS-pertamamu)
+        - [CSS Pertamamu](#css-pertamamu)
         - [Konsep CSS Selector](#konsep-selektor)
             - [Element Selector](#element-selector)
             - [Class Selector](#class-selector)
@@ -920,4 +920,213 @@ Contoh penggunaan paling sederhana :
         nulla illum?</p>
 </section>
 <!-- Element HTML lain -->
+```
+
+#### Navigation
+
+Navigation mirip dengan `<section>` cuman perbedaanya konten Navigation lebih mengarah ke Link, cara penulisan elementnya `<nav>`, tidak semua link harus dimasukan kedalam element ini, hanya digunakan ketika banyak sekali link di suatu tempat. Contoh :
+
+```html
+<nav>
+    <a href="https://google.com">Google</a>
+    <a href="https://twiter.com">Twitter</a>
+</nav>
+```
+
+Hasil dari diatas mirip dengan `<section>`.
+
+#### Footer
+
+Footer ini digunakan di paling bawah di halaman website, penulisannya sesuai dengan namanya `<footer>`.
+
+Biasanya isi footer :
+
+- Informasi kepemilikan
+- Hak cipta
+- Kontak pemilik
+- Link kembali ke-atas
+- Link ke website yang relevan
+
+Contoh dengan element semantic yang lain
+
+```html
+<footer>
+    <h1>Website Keren</h1>
+    <a href="https://google.com">Google</a>
+    <a href="https://google.com">Instagram</a>
+    <a href="https://twiter.com">Twitter</a>
+</footer>
+```
+
+Karena contoh diatas kosong jangan berekpetasi kalau `<footer>` otomatis di paling bawah.
+
+![Hasil dari kode diatas](asset/html/contoh-semantic-footer.png)
+
+##### Latihan Semantic HTML
+
+Buatlah suatu halaman artikel yang mengikuti semantic HTML, seperti contoh dibawah ini.
+
+![Contoh](asset/html/latihan-semantic-html.png)
+
+#### Multimedia
+
+Multimedia di web development bukan berarti kita akan membuat 3D model disini, tetapi bagaimana kita menambah gambar atau video kedalam website kita, tetapi ada beberapa hal yang anda harus ketahui sebelum memasukan gambar atau video kedalam website.
+
+##### Konsep Filepath
+
+Karena komputer dapat menyimpan banyak data seperti file dan folder, jadi ketika kita menuliskan nama file saja komputer kadang tidak tau file mana yang harus diolah, nah oleh karena itu kita belajar sedikit tentang file path, sesuai namanya filepath yang berarti alamat file, ini mirip dengan URL, tetapi dengan sistem file di komputer local, ada 2 jenis filepath yaitu
+
+1. Absolute Filepath
+
+    Biasanya dimulai dengan `/`, ini akan mengarah dari paling atas, misalnya di windows di drive C di folder A terdapat file yang menggunakan filepath `/B/gambar.png` itu akan menjadi `C:\B\gambar.png` secara otomatis perlu di-ingat Absolute Path mulai dari atas atau _root_.
+
+2. Relative Filepath
+
+    Filepath ini dimulai dengan `./`, jenis ini sering yang kita jumpai karena secara otomatis kita mengakses ditempat yang sama tidak mulai dari paling atas/root seperti Absolute Filepath, misalnya di drive C di folder A terdapat file yang menggunakan `./gambarku/gambar.png` itu akan secara otomatis menjadi `C:\A\gambarku\gambar.png`, untuk naik atau keluar dari folder A kita bisa menggunakan `../`, dengan menggunakan contoh di Absolute Path kita bisa mengetik filepath menjadi `../B/gambar.png`.
+
+Kalau sudah paham dengan filepath, anda akan jarang mengalami masalah kalau gambar atau file tertentu tidak bisa dimuat.
+
+##### Gambar
+
+Di HTML terdapat element `<img>` untuk memuat gambar, element tersebut memiliki attribute `src` yang berisi `filepath` ataupun `URL`, lalu bisa diberi attribute `alt` untuk memberi teks ketika gambar gagal dimuat. Contoh :
+
+```html
+<!-- Element HTML Lain -->
+
+<img src="./me.jpg" alt="Gambarku">
+
+<!-- Element HTML Lain -->
+```
+
+Di contoh diatas saya menggunakan file `me.jpg` yang diambil dari gambar profil github saya. Jika gambar kalian di browser sudah melewati yang dapat ditampilkan sampai mengeluarkan scroll, bisa saja gambar tersebut lebih besar dari layar anda.
+
+![Hasil dari kode diatas](asset/html/contoh-gambar.png)
+
+##### Video
+
+Kita dapat memberi video di halaman website kita, penulisannya sangat simpel dengan menggunakan element `<video>`, lalu kita bisa beri attribute `autoplay` untuk membuat element tersebut memutar otomatis dan attribute `controls` untuk memberi pengguna kita kontrol terhadap video tersebut.
+
+```html
+<!-- Element HTML Lain -->
+
+<video src="./video.mp4" width='400' autoplay controls></video>
+
+<!-- Element HTML Lain -->
+```
+
+![Hasil dari kode diatas](asset/html/contoh-video.png)
+
+##### Audio
+
+Kita dapat memutar audio di halaman website kita, penulisannya mirip dengan `<video` tetapi bedanya element yang dipakai `<audio>`.
+
+```html
+<!-- Element HTML Lain -->
+
+<audio src="./Age of Empire II - The Age of Kings - Opening.mp3" autoplay controls></audio>
+
+<!-- Element HTML Lain -->
+```
+
+![Hasil dari kode diatas](asset/html/contoh-audio.png)
+
+##### Embedding Situs Youtube
+
+Embedding Situs atau dengan kata lain membuat browser kecil di halaman website kita yang mengarah ke website tertentu sangat mudah, untuk melakukan embed kita tinggal kunjungi `youtube` tekan share lalu klik `embed`.
+
+```html
+<!-- Element HTML Lain -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GtL1huin9EE" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+<!-- Element HTML Lain -->
+```
+
+![Hasil dari kode diatas](asset/html/contoh-embed-youtube.png)
+
+##### Latihan Multimedia
+
+Buatlah halaman website dengan element yang diterangkan diatas.
+
+#### Project HTML Tingkat Menengah
+
+##### Membuat Blog Sederhana
+
+Buatlah sebuah blog sederhana yang berisikan beberapa artikel yang memiliki gambar dan video youtube, dan juga menggunakan [Semantic HTML](#konsep-semantic-html).
+
+## Pengenalan CSS
+
+### Apa itu CSS?
+
+CSS atau Cascading Style Sheets merupakan bahasa style sheet yang digunakan untuk menghias bahasa markup seperti HTML. CSS ini didesain untuk memperbagus suatu halaman dan menberikan kontrol bagaimana konten direpresentasikan, file CSS berakhiran dengan `.css`.
+
+#### Asal Muasal CSS
+
+CSS di usulkan oleh Hakon Wium Lie pada tanggal 10 Oktober 1994. Pada saat itu, Lie mengerjakan dengan Tim Berners-Lee at CERN. Ada beberapa bahasa style sheets untuk web yang diajukan juga pada waktu itu, dan disuksi melalui World Wide Web Consortium menghasilkan W3C CSS Recommendation (CSS1) yang dirilis pada tahun 1996.
+
+#### Kegunaan CSS
+
+Sesuai dengan yang dijelaskan diatas, CSS digunakan untuk memperbagus suatu halaman dan memberikan kontrol bagaimana konten ditampilkan.
+
+#### Contoh CSS
+
+Ada beberapa contoh penulisan CSS yang pertama langsung di HTML, dan yang kedua dengan file CSS sendiri, khusus yang kedua akan memiliki tempat tersendiri.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Belajar CSS</title>
+        <style>
+            h2 {
+                color: red;
+                background-color: gray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Halo, saatnya CSS</h2>
+    </body>
+
+</html>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-css.png)
+
+### Dasar CSS
+
+#### Peralatan yang dibutuhkan
+
+- Text Editor (VSCode, VIM, Notepad)
+- Web Browser (Firefox, Microsoft Edge, Chrome)
+- Internet (Opsional)
+
+#### CSS Pertamamu
+
+Jika anda belum menyoba contoh diatas tadi, segera dilakukan, filenya tetap sama memakai `.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Belajar CSS</title>
+        <style>
+            h2 {
+                color: red;
+                background-color: gray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Halo, saatnya CSS</h2>
+    </body>
+
+</html>
 ```
