@@ -102,8 +102,9 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Memberi Warna Background](#memberi-warna-background)
             - [Latihan Memberi warna](#latihan-memberi-warna)
         - [Formatting](#formatting-1)
-            - [Menganti Font Family](#menganti-font-family)
-            - [Menganti Ukuran Font](#menganti-ukuran-font)
+            - [Mengganti Font Family](#mengganti-font-family)
+            - [Mengganti Ukuran Font](#mengganti-ukuran-font)
+            - [Memberi Garis Bawah pada Teks](#memberi-garis-bawah-pada-teks)
             - [Memiringkan Teks](#memiringkan-teks-1)
             - [Menebalkan Teks](#menebalkan-teks-1)
             - [Memberi Bayangan pada teks](#memberi-bayangan-pada-teks)
@@ -1091,6 +1092,7 @@ Ada beberapa contoh penulisan CSS yang pertama langsung di HTML, dan yang kedua 
 
     <body>
         <h2>Halo, saatnya CSS</h2>
+        <p style='color: blue'>Hai</p>
     </body>
 
 </html>
@@ -1130,3 +1132,237 @@ Jika anda belum menyoba contoh diatas tadi, segera dilakukan, filenya tetap sama
 
 </html>
 ```
+
+#### [Konsep Selektor](#daftar-isi)
+
+Untuk bisa memberikan menghias element HTML kita, pertama kita harus menunjuk element HTML apa yang harus dihias, di contoh diatas menggunakan `Element Selector`.
+
+##### Element Selector
+
+Sesuai dengan namanya selector ini akan men-select element, selector ini jarang dipakai karena akan menghias semua element HTML yang memiliki nama element atau tag yang sama. Contoh :
+
+```html
+<head>
+    <style>
+        p {
+            color: red;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Halo, saatnya CSS</h2>
+    <p>Halo Dunia</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus similique eius quod alias! Facere,
+        provident? Odit sed earum adipisci? In dolores provident commodi quaerat? At error omnis alias eveniet!</p>
+</body>
+```
+
+![Hasil dari contoh diatas](asset/css/contoh-element-selector.png)
+
+##### [Class Selector](#daftar-isi)
+
+Sama seperti Element Selector tetapi menggunakan `class` attribute, kalau lupa bisa kembali ke bagian [Struktur HTML](#struktur-element) dan dibaca kembali. Contoh penulisannya :
+
+```html
+<head>
+    <style>
+        .halo {
+            color: red;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Halo, saatnya CSS</h2>
+    <p class='halo'>Halo Dunia</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus similique eius quod alias! Facere,
+        provident? Odit sed earum adipisci? In dolores provident commodi quaerat? At error omnis alias eveniet!</p>
+</body>
+```
+
+![Hasil dari contoh diatas](asset/css/contoh-class-selector.png)
+
+#### [Komentar](#daftar-isi)
+
+Kegunaannya sama seperti [komentar di HTML](#komentar), bedanya hanya dibagian penulisannya dengan bagian awal `/*` lalu diakhir dengan `*/`, dan juga multibaris. Contoh penulisannya
+
+```css
+/* Ini Komentar */
+.halo {
+    color: red;
+    background-color: gray;
+}
+
+/* Ini Juga Komentar */
+```
+
+#### [Pewarnaan dengan CSS](#daftar-isi)
+
+Kalau anda perhatikan pada materi sebelumnya sebenarnya anda sudah melakukan pewarnaan dengan CSS tetapi untuk bab ini kita akan mendalaminya mengapa? Karena di CSS banyak cara untuk mewarnai sesuatu.
+
+Sebelum kita lanjut, ada banyak cara untuk memberi warna tetapi kita anya fokus 3 cara saja, yang pertama memakai nama warnanya, mengisi kode RGB, dan kode _Hexdecimal_.
+
+Misalnya warna abu abu :
+
+- Nama => `gray`
+- Warna RGB => `rgb(155, 155, 155)`
+- Kode _Hexdecimal => `#9b9b9b`
+
+##### Memberi Warna Teks
+
+Seperti dengan contoh diatas, sudah 2 kali lebih, kalau belum paham sangat luar biasa.
+
+```css
+p {
+color: rgb(155, 155, 155);
+}
+```
+
+##### Memberi Warna Background
+
+Seperti dengan contoh diatas, sudah 2 kali lebih, kalau belum paham sangat luar biasa.
+
+```css
+.bg-abu-abu {
+    background-color: #9b9b9b;
+}
+```
+
+##### Latihan Memberi Warna
+
+Buatlah halaman yang memiliki warna seperti dibawah ini.
+
+![Target latihan](asset/css/latihan-warna.png)
+
+#### Formatting
+
+Di CSS kita bisa melakukan formatting tanpa menggunakan element HTML dan bisa lebih bagus dibandingkan dengan element HTML, seperti memberi bayangan, menganti font, dan masih banyak lagi tanpa mengotori susunan element HTML kita.
+
+##### Mengganti Font Family
+
+Hal pertama yang element HTML tidak bisa ubah ialah Font Family, untuk mengganti Font Family anda harus tau nama nama fontnya terlebih dahulu, misalnya `monspace`, `Courier`, dll, perlu di-ingat pastikan anda sudah mempunya font tersebut. Contoh :
+
+```html
+<style>
+    .paragraf-1 {
+        font-family: monospace;
+    }
+
+    .paragraf-2 {
+        font-family: Courier;
+    }
+</style>
+
+<p class='paragraf-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maxime, optio laudantium
+    sunt natus tempore ex
+    consequatur doloremque dolorem ducimus aliquid quidem repellat officiis magni delectus itaque reprehenderit
+    eos illo?
+</p>
+
+<p>
+    ------------------
+</p>
+
+<p class='paragraf-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maxime, optio laudantium
+    sunt natus tempore ex
+    consequatur doloremque dolorem ducimus aliquid quidem repellat officiis magni delectus itaque reprehenderit
+    eos illo?
+</p>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-font-family.png)
+
+##### Mengganti Ukuran Font
+
+Di element HTML sudah bisa mengganti ukuran font dengan menggunakan element `<h1>` tetapi element tersebut juga membuat teks tersebut menjadi `bold`, untuk menghindari masalah tersebut CSS memiliki perintah untuk mengganti ukuran font, Contoh :
+
+```html
+<style>
+    p {
+        font-size: 18px;
+    }
+</style>
+
+<p>Halo Dunia</p>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-font-size.png)
+
+##### Memberi Garis Bawah pada Teks
+
+Di CSS juga bisa memberikan garis bawah pada teks. Contohnya :
+
+```html
+<style>
+    p {
+        text-decoration: underline;
+    }
+</style>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio architecto pariatur, laudantium amet vel
+    recusandae ut ad corporis autem, distinctio corrupti! Odit in recusandae nobis numquam consequuntur ullam ad
+    dolorem.
+</p>
+```
+
+![Contoh dari kode diatas](asset/css/contoh-underline.png)
+
+##### Memiringkan Teks
+
+Di CSS juga bisa memiringkan teks seperti yang element HTML tetapi kita tidak membuat element HTML kita terlalu banyak.
+
+```html
+<style>
+    h2 {
+        font-style: italic;
+    }
+</style>
+
+<h2>Memiringkan teks sangat mudah</h2>
+```
+
+![Contoh dari kode diatas](asset/css/contoh-italic.png)
+
+##### Menebalkan Teks
+
+Di CSS juga bisa menebalkan teks HTML, seperti dengan memiringkan teks cara penggunaanya.
+
+```html
+<style>
+    h2 {
+        font-weight: bold;
+    }
+</style>
+
+<h2>Menebalkan teks sangat mudah</h2>
+```
+
+![Contoh dari kode diatas](asset/css/contoh-bold.png)
+
+##### Memberi bayangan Pada Teks
+
+Ada beberapa formatting yang di Element HTML tidak bisa dilakukan, salah satunya memberi bayangan kepada teks, penulisannya sedikit berbeda dengan yang lain dan dicampur dengan warna juga. Contoh :
+
+```html
+<style>
+    h2 {
+        text-shadow: 2px 2px gray;
+    }
+</style>
+
+<h2>Memberi Bayangan teks sangat mudah</h2>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-text-shadow.png)
+
+Perlu di-ingat urutannya tidak boleh kebalik `text-shadow: {offset-x} {offset-y} {blur} {warna}`. offset merupakan tata letak dengan memakai posisi utama sebagai patokan.
+
+##### Latihan Formatting
+
+Buatlah formatting seperti dicontoh dibawah ini.
+
+![Latihan Formatting](asset/css/latihan-formatting.png)
