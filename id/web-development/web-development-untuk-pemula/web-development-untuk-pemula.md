@@ -97,7 +97,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Element Selector](#element-selector)
             - [Class Selector](#class-selector)
         - [Komentar](#komentar)
-        - [Pewarnaan dengan CSS](#perwanaan-dengan-css)
+        - [Pewarnaan dengan CSS](#pewarnaan-dengan-css)
             - [Memberi Warna Teks](#memberi-warna-teks)
             - [Memberi Warna Background](#memberi-warna-background)
             - [Latihan Memberi warna](#latihan-memberi-warna)
@@ -109,11 +109,10 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Menebalkan Teks](#menebalkan-teks-1)
             - [Memberi Bayangan pada teks](#memberi-bayangan-pada-teks)
             - [Latihan Formatting](#latihan-formatting-1)
-        - [Memberi Background Terhadap Element HTML](#member-background-terhadap-element-html)
+        - [Memberi Background pada Element HTML](#memberi-background-pada-element-html)
             - [Menggunakan Warna Sebagai Background](#menggunakan-warna-sebagai-background)
             - [Menggunakan Gambar Sebagai Background](#menggunakan-gambar-sebagai-background)
-        - [Memberi Bayangan Terhadap Element HTML](#memberi-bayangan-terhadap-element-html)
-            - [Kegunaan Bayangan Element HTML](#kegunaan-bayangan-element-html)
+        - [Memberi Bayangan pada Element HTML](#memberi-bayangan-pada-element-html)
             - [Latihan Menerapkan Bayangan pada Element](#latihan-menerapkan-bayangan-pada-element)
         - [Memberi Ruang Antara element](#memberi-ruang-antara-element)
             - [Konsep Box Model](#konsep-box-model)
@@ -1366,3 +1365,108 @@ Perlu di-ingat urutannya tidak boleh kebalik `text-shadow: {offset-x} {offset-y}
 Buatlah formatting seperti dicontoh dibawah ini.
 
 ![Latihan Formatting](asset/css/latihan-formatting.png)
+
+#### Memberi Background pada Element HTML
+
+##### Menggunakan Warna Sebagai Background
+
+Kalau memperhatikan di contoh pertama pasti sudah tau bagaimana cara memberikan background bewarna pada element HTML. Contohnya :
+
+```html
+<style>
+    p {
+        background-color: gainsboro;
+    }
+</style>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio architecto pariatur, laudantium amet vel
+    recusandae ut ad corporis autem, distinctio corrupti! Odit in recusandae nobis numquam consequuntur ullam ad
+    dolorem.
+</p>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-background-color.png)
+
+#### Menggunakan Gambar Sebagai Background
+
+Kita tidak hanya terbatas di warna saja kita bisa menaruh gambar juga dengan menggunakan `background-image`, pertama kita harus menyiapkan  gambarnya terlebih dahulu lalu kita beri `background-image`, seperti dicontoh dibawah ini
+
+```html
+<style>
+    p {
+        background-image: url(9496828_p0.jpg);
+    }
+</style>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio architecto pariatur, laudantium amet vel
+    recusandae ut ad corporis autem, distinctio corrupti! Odit in recusandae nobis numquam consequuntur ullam ad
+    dolorem.
+</p>
+```
+
+![Hasil dari contoh diatas](asset/css/contoh-background-image.png)
+
+Dicontoh diatas gambarnya tidak ditengah tengah element kita bisa beri `background-position: center` atau nama posisi sesuai selera misalnya `left`, `right`, `top`, terdapat juga `background-repeat` untuk menandai kalau background harus diulang-ulang atau tidak, karena ada gambar yang terlalu kecil di element HTML, dan terdapat `background-size` untuk mengatur besar kecilnya gambar background. Contoh :
+
+```html
+<style>
+    p {
+        color: rgba(255, 255, 255, 0.2);
+        background-image: url(9496828_p0.jpg);
+        background-position: center;
+        background-size: contain;
+    }
+</style>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio architecto pariatur, laudantium amet vel
+    recusandae ut ad corporis autem, distinctio corrupti! Odit in recusandae nobis numquam consequuntur ullam ad
+    dolorem.
+</p>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-background-image-2.png)
+
+#### Memberi Bayangan pada Element HTML
+
+Kita bisa memberi bayangan pada Element HTML tidak hanya di fontnya saja. Kegunaan dari bayangan ini bisa memberikan efek 3D di suatu website, penulisannya mirip dengan `text-shadow` bedanya daripada text kita memakai box seperti `box-shadow`. Contoh
+
+```html
+<style>
+    div {
+        background-color: rgb(236, 236, 236);
+        box-shadow: 5px 5px 5px 5px rgb(133, 133, 133);
+    }
+</style>
+
+<div>
+    <h2>Halo Dunia!</h2>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In optio doloremque a qui? Assumenda illo
+        natus facere inventore hic? Rerum tempore excepturi voluptates. Quibusdam quia dolorum voluptatibus
+        eaque commodi aliquam!
+    </p>
+</div>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-box-shadow.png)
+
+Perlu di-ingat susunan mirip dengan `text-shadow` tetapi ditambah 1 lagi jadi `box-shadow: {offset-x} {offset-y} {blur} {spread} {warna}`, `spread` menunjukan seberapa luas bayangan yang akan dibuat, kita juga bisa menambahkan banyak bayangan sekaligus dengan dipisah dengan `,`. Contoh :
+
+```css
+div {
+    box-shadow: inset 2px 2px rgb(133, 133, 133), 5px 5px 5px 5px rgb(231, 231, 231);
+    // Ini juga bisa tapi lebih rapi dan enak dibaca
+    box-shadow: inset 2px 2px rgb(133, 133, 133),
+                5px 5px 5px 5px rgb(231, 231, 231);
+}
+```
+
+##### Latihan Menerapkan Bayangan Pada Element
+
+Buatlah suatu halaman yang memiliki struktur seperti digambar ini
+
+![Target latihan](asset/css/latihan-box-shadow.png)
