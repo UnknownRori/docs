@@ -104,6 +104,7 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
         - [Formatting](#formatting-1)
             - [Mengganti Font Family](#mengganti-font-family)
             - [Mengganti Ukuran Font](#mengganti-ukuran-font)
+            - [Mengatur Posisi Font](#mengatur-posisi-font)
             - [Memberi Garis Bawah pada Teks](#memberi-garis-bawah-pada-teks)
             - [Memiringkan Teks](#memiringkan-teks-1)
             - [Menebalkan Teks](#menebalkan-teks-1)
@@ -114,16 +115,16 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [Menggunakan Gambar Sebagai Background](#menggunakan-gambar-sebagai-background)
         - [Memberi Bayangan pada Element HTML](#memberi-bayangan-pada-element-html)
             - [Latihan Menerapkan Bayangan pada Element](#latihan-menerapkan-bayangan-pada-element)
+        - [Mengatur Garis Pembatas pada Element](#mengatur-garis-pembatas-pada-element)
+            - [Bentuk Garis Pembatas](#bentuk-garis-pembatas)
+            - [Menerapkan Border Element agar Tidak Terlalu Tajam](#menerapkan-border-element-agar-tidak-terlalu-tajam)
+            - [Latihan Membuat Kartu Informasi Sederhaha](#latihan-membuat-kartu-informasi-sederhana)
         - [Memberi Ruang Antara element](#memberi-ruang-antara-element)
             - [Konsep Box Model](#konsep-box-model)
             - [Margin](#margin)
             - [Padding](#padding)
             - [Latihan Menerapkan Ruang Antara Element](#latihan-menerapkan-ruang-antara-element)
         - [Mengatur Ukuran Suatu Element](#mengatur-ukuran-suatu-element)
-        - [Mengatur Garis Pembatas untuk Element](#mengatur-garis-pembatas-untuk-element)
-            - [Bentuk Garis Pembatas](#bentuk-garis-pembatas)
-            - [Menerapkan Border Element agar Tidak Terlalu Tajam](#menerapkan-border-element-agar-tidak-tajam)
-            - [Latihan Membuat Kartu Informasi Sederhaha](#latihan-membuat-kartu-informasi-sederhana)
         - [Konsep Layout Sederhana Menggunakan Flex](#konsep-layout-sederhana-menggunakan-flex)
             - [Mengatur Flex](#mengatur-flex)
             - [Layout Konten Sejajar](#layout-konten-sejajar)
@@ -1290,6 +1291,20 @@ Di element HTML sudah bisa mengganti ukuran font dengan menggunakan element `<h1
 
 ![Hasil dari kode diatas](asset/css/contoh-font-size.png)
 
+##### Mengatur Posisi Font
+
+Di CSS kita juga bisa mengatur posisi font, misalnya rata tengah atau rata kanan seperti halnya di Microsoft Word, penulisannya `text-align: {posisi}`. Contohnya :
+
+```html
+<style>
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<h2>Halo</h2>
+```
+
 ##### Memberi Garis Bawah pada Teks
 
 Di CSS juga bisa memberikan garis bawah pada teks. Contohnya :
@@ -1459,6 +1474,7 @@ Perlu di-ingat susunan mirip dengan `text-shadow` tetapi ditambah 1 lagi jadi `b
 ```css
 div {
     box-shadow: inset 2px 2px rgb(133, 133, 133), 5px 5px 5px 5px rgb(231, 231, 231);
+
     // Ini juga bisa tapi lebih rapi dan enak dibaca
     box-shadow: inset 2px 2px rgb(133, 133, 133),
                 5px 5px 5px 5px rgb(231, 231, 231);
@@ -1470,3 +1486,167 @@ div {
 Buatlah suatu halaman yang memiliki struktur seperti digambar ini
 
 ![Target latihan](asset/css/latihan-box-shadow.png)
+
+#### Mengatur Garis Pembatas pada Element
+
+Di CSS kita juga bisa membuat garis pembatas atau garis tepi pada Element HTML, penulisannya mirip dengan `box-shadow`  tetapi sedikit berbeda cara penulisannya `border: {ukuran-di-semua-sisi} {jenis-garis} {warna}`. Garis pembatas ini sering digunakan untuk membuat efek bayangan ketika digabungkan dengan `box-shadow`. Contoh
+
+```html
+<style>
+    p {
+        border: 4px solid black;
+    }
+</style>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore qui sunt reiciendis sed quos
+    recusandae, dicta quae, accusantium ad sit quasi fugit magnam explicabo illum asperiores fuga vitae
+    consequuntur.
+</p>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-border.png)
+
+##### Bentuk Garis Pembatas
+
+Kita juga bisa mengganti bentuk garis pembatas tersebut, ada beberapa macam jenis antara lain :
+
+- solid
+- dotted
+- double
+- groove
+- inset
+- dashed
+
+##### Menerapkan Border Element agar Tidak Terlalu Tajam
+
+Terkadang kita ingin garis tersebut tidak tajam, di CSS ada satu skrip yang bernama `box-radius`. Contoh :
+
+```html
+<style>
+    p {
+        border: 4px solid black;
+        border-radius: 20px;
+    }
+</style>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore qui sunt reiciendis sed quos
+    recusandae, dicta quae, accusantium ad sit quasi fugit magnam explicabo illum asperiores fuga vitae
+    consequuntur.
+</p>
+```
+
+##### Latihan Membuat Kartu Informasi Sederhana
+
+Buatlah kartu informasi yang mirip dengan contoh dibawah ini
+
+![Latihan membuat kartu informasi](asset/css/latihan-membuat-kartu-informasi.png)
+
+#### Memberi Ruang Antara Element
+
+Sewaktu waktu kita ingin membuat Element di HTML memiliki jarak tertentu, kita bisa memakai beberapa fitur, ada bagus dan jeleknya, bagusnya dari ini ialah kita bisa membuat jarak di semua ataupun beberapa di element HTML dengan mudah, jeleknya terkadang merusak susunan element di halaman lain.
+
+##### Konsep Box Model
+
+Di HTMl ada konsep box model yang merepresentasikan semua element HTML seperti kotak, konsep ini sangat bermanfaat hampir semua browser memiliki visualisasi hal tersebut menggunakan `Dev Tool`. Bentuk dari box model seperti ini :
+
+![Gambar Box Model](asset/css/box-model.png)
+
+Susunan dari box :
+
+- Biru : Konten Kita
+- Ungu : Padding
+- Hitam : Pembatas antara Padding dengan Margin
+- Kuning : Margin
+
+##### Margin
+
+Margin digunakan untuk memberikan ruang disekitar element, margin ini berada diluar bagian border. Untuk mengatur margin ada berbagai cara. Contoh :
+
+```html
+<style>
+    div {
+        margin: 20px;
+    }
+</style>
+
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore qui sunt reiciendis sed quos
+    recusandae, dicta quae, accusantium ad sit quasi fugit magnam explicabo illum asperiores fuga vitae
+    consequuntur.
+</div>
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore qui sunt reiciendis sed quos
+    recusandae, dicta quae, accusantium ad sit quasi fugit magnam explicabo illum asperiores fuga vitae
+    consequuntur.
+</div>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-margin.png)
+
+Dengan contoh diatas akan memberikan margin pada semua element `<div>` dengan ukuran `20px`, kita juga bisa membuat lebih spesifik dengan menambah seperti dibawah ini.
+
+```html
+<style>
+    div {
+        margin: 20px 50px 20px 50px;
+    }
+</style>
+
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore qui sunt reiciendis sed quos
+    recusandae, dicta quae, accusantium ad sit quasi fugit magnam explicabo illum asperiores fuga vitae
+    consequuntur.
+</div>
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore qui sunt reiciendis sed quos
+    recusandae, dicta quae, accusantium ad sit quasi fugit magnam explicabo illum asperiores fuga vitae
+    consequuntur.
+</div>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-margin-2.png)
+
+Urutannya dimulai dari atas lalu kekanan lalu kebawah lalu kekiri, kita juga bisa bisa menggunakan `margin-left` dan lain sebagainya sesuai dengan penamaan inggris agar lebih mudah membacanya.
+
+##### Padding
+
+Sama seperti dengan margin, padding digunakan untuk memberikan ruang disekitar konten kita sampai dengan border, pemakaiannya sama dengan
+
+##### Latihan Menerapkan Ruang Antara Element
+
+Buatlah suatu halaman website yang sesuai dengan gambar dibawah ini, pastikan `margin` sesuai.
+
+![Latihan Ruang Antara Element](asset/css/latihan-memberi-ruang.png)
+
+#### Mengatur Ukuran Suatu Element
+
+Di CSS kita juga bisa mengatur ukuran suatu element dengan menggunakan `width` untuk lebar element dan `height` untuk tinggi element, penulisannya kedua hal tersebut sama `width: {lebar}`. Contoh :
+
+```html
+<style>
+    div {
+        border: 1px solid rgb(233, 233, 233);
+        border-radius: 5px;
+        box-shadow: 3.5px 3.5px 3.5px 3.5px rgb(190, 190, 190);
+        width: 200px;
+        padding: 3.5px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<div>
+    <h2>Halo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum aperiam. Sed cum
+        dignissimos quibusdam explicabo odit facilis ea molestias, eligendi eveniet vero facere nobis quod porro
+        omnis blanditiis ipsum.
+    </p>
+</div>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-width.png)
