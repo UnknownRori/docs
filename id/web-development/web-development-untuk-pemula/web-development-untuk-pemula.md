@@ -127,12 +127,11 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
         - [Mengatur Ukuran Suatu Element](#mengatur-ukuran-suatu-element)
         - [Konsep Layout Sederhana Menggunakan Flex](#konsep-layout-sederhana-menggunakan-flex)
             - [Mengatur Flex](#mengatur-flex)
-            - [Layout Konten Sejajar](#layout-konten-sejajar)
             - [Layout Konten di Tengah](#layout-konten-ditengah)
             - [Latihan Layout Menggunakan Flex](#latihan-layout-menggunakan-flex)
         - [Memisahkan Kode CSS dengan HTML](#memisahkan-kode-css-dengan-html)
         - [Project CSS](#-project-css)
-            - [Membuat Data Data yang Keren](#membuat-data-diri-yang-keren)
+            - [Membuat Daftar Film](#membuat-daftar-film)
             - [Membuat Halaman Login](#membuat-halaman-login)
     - [CSS Tingkat mengengah](#css-tingkat-menengah)
         - [Pendalaman CSS Selektor](#pendalaman-css-selektor)
@@ -1650,3 +1649,94 @@ Di CSS kita juga bisa mengatur ukuran suatu element dengan menggunakan `width` u
 ```
 
 ![Hasil dari kode diatas](asset/css/contoh-width.png)
+
+#### Konsep Layout Sederhana Menggunakan Flex
+
+Konsep layout paling sederhana di CSS menggunakan flex, normalnya flex akan membuat element HTML menjadi sejajar, misalnya :
+
+```html
+<style>
+    div {
+        display: flex
+    }
+</style>
+
+<div>
+    <h2>Halo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum aperiam. Sed cum
+        dignissimos quibusdam explicabo odit facilis ea molestias, eligendi eveniet vero facere nobis quod porro
+        omnis blanditiis ipsum.
+    </p>
+</div>
+```
+
+![Hasil dari kode diatas](asset/css/contoh-flex-sederhana.png)
+
+##### Layout Konten Tengah
+
+Kita bisa membuat konten kita berada ditengah tengah dengan menggunakan `justify-content` di wadah utama (biasanya disebut `container`).
+
+```html
+<style>
+    div.container {
+        height: 97vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    div.card {
+        padding: 15px;
+        width: 200px;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px #C1C0C0;
+        border-radius: 20px;
+        border: 0.5px gray;
+}
+</style>
+
+<div class="container">
+    <div class="card">
+        <h2>Halo</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum aperiam. Sed cum
+            dignissimos quibusdam explicabo odit facilis ea molestias, eligendi eveniet vero facere nobis quod
+            porro
+            omnis blanditiis ipsum.
+        </p>
+    </div>
+</div>
+```
+
+Contoh dari kode diatas
+
+[Hasil dari kode diatas](./asset/css/flex-justify-center.png)
+
+##### Latihan Layout Menggunakan Flex
+
+Buatlah suatu halaman dengan bentuk seperti ini
+
+![Gambar HasilLatihan](asset/css/latihan-flex.png)
+
+#### Memisahkan Kode CSS dengan HTML
+
+Agar koding kita terlihat rapi dan tertata kita harus melakukan pemisahan kode CSS dengan HTML untuk memudahkan kita merawat halaman website tersebut, untuk memisahkan copy semua yang didalam `<style>` lalu buat file yang berextensi `.css` dan lalu di paste, lalu kita harus menspesifikan di halaman `.html` kita untuk menggunakan file css tersebut dengan menggunakan `<link rel="stylesheet" href="./name-file.css">` Contoh : 
+
+```html
+<head>
+    <title>Belajar CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+```
+
+#### Project CSS 
+
+##### Membuat Daftar Film
+
+Buatlah daftar film yang menggunakan gambar dan tabel, dan pastikan file tersebut (kode css di file `.css` dan kode html di `.html`, untuk film bebas memakai film apa.
+
+##### Membuat Halaman Login
+
+Buatlah suatu halaman login yang menggunakan form ditengah tengah halaman, form tersebut memiliki kolom yang dapat di-isi seperti username, password, lalu terdapat `checkbox` remember me.
+
