@@ -4,11 +4,11 @@
 
 Buku ini hanya untuk pemula yang tidak tau mulai dari mana. Untuk melatih skill web development Anda, Anda harus berlatih dan mencari ilmu di luar daripada mengandalkan buku ini saja. Jadi, buku ini sebagai batu loncatan bukan sebagai buku "From Nubby To Pro" karena tips dan trik biasanya dapat dari lapangan atau orang yang sudah pernah melakukannya dan tambahan buku ini ter-inspirasi [w3schools.com](https://w3schools.com) jadi jangan lupa untuk dicek.
 
-Belajar tentang pemrograman seperti `Web Development` ini tidak langsung bisa membuat Anda membuat sesuatu yang sangat keren, tetapi anda bisa membuat sesuatu yang setidaknya sedikit keren. Anda harus banyak berlatih, melakukan eksperimen, membaca artikel, bertanya kepada orang lain yang memiliki pengalaman, dan jangan lupa YouTube, YouTube merupakan sarana pembelajaran terbaik untuk orang yang jarang membaca.
+Belajar tentang pemrograman seperti `Web Development` ini tidak langsung bisa membuat Anda membuat sesuatu yang sangat keren, tetapi Anda bisa membuat sesuatu yang setidaknya sedikit keren. Anda harus banyak berlatih, melakukan eksperimen, membaca artikel, bertanya kepada orang lain yang memiliki pengalaman, dan jangan lupa YouTube. YouTube merupakan sarana pembelajaran terbaik untuk orang yang jarang membaca.
 
 ## Metode Pembelajaran
 
-Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, dan beberapa poin terdapat project khusus yang harus dikerjakan.
+Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, dan beberapa poin terdapat projek khusus yang harus dikerjakan.
 
 ## Daftar isi
 
@@ -170,9 +170,9 @@ Metode pembelajaran yang dipakai oleh buku ini adalah materi, latihan mandiri, d
             - [let](#let)
             - [const](#const)
             - [Menganti Konten Variabel](#menganti-dengan-variabel)
-            - [Latihan Melakukan Operasi Matematika Dengan mariabel](#latihan-melakukan-operasi-matematika-dengan-variabel)
+            - [Latihan Melakukan Operasi Matematika dengan variabel](#latihan-melakukan-operasi-matematika-dengan-variabel)
         - [Menjalankan Kode dengan Kondisi](#menjalankan-kode-dengan-kondisi)
-            - [Manfaat Dari Menjalankan Beberapa Kode Dengan Kondisi Tertentu](#manfaat-dari-menjalankan-beberapa-kode-dengan-kondisi-tertentu)
+            - [Manfaat dari Menjalankan Beberapa Kode dengan Kondisi Tertentu](#manfaat-dari-menjalankan-beberapa-kode-dengan-kondisi-tertentu)
             - [if-statement](#if-statement)
             - [switch-statement](#switch-statement)
             - [Latihan Membuat Konverter Nilai Menjadi Huruf](#latihan-membuat-konverter-nilai-menjadi-huruf)
