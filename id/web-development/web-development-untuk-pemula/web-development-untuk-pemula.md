@@ -4,7 +4,7 @@
 
 Buku ini hanya untuk pemula yang tidak tau mulai dari mana. Untuk melatih skill web development Anda, Anda harus berlatih dan mencari ilmu di luar daripada mengandalkan buku ini saja. Jadi, buku ini sebagai batu loncatan bukan sebagai buku "From Nubby To Pro" karena tips dan trik biasanya dapat dari lapangan atau orang yang sudah pernah melakukannya dan tambahan buku ini ter-inspirasi [w3schools.com](https://w3schools.com) jadi jangan lupa untuk dicek.
 
-Belajar tentang pemrograman seperti `Web Development` ini tidak langsung bisa membuat Anda membuat sesuatu yang sangat keren, tetapi Anda bisa membuat sesuatu yang setidaknya sedikit keren. Anda harus banyak berlatih, melakukan eksperimen, membaca artikel, bertanya kepada orang lain yang memiliki pengalaman, dan jangan lupa YouTube. YouTube merupakan sarana pembelajaran terbaik untuk orang yang jarang membaca.
+Belajar tentang pemrograman seperti `Web Development` ini tidak langsung bisa membuat Anda membuat sesuatu yang sangat keren, tetapi Anda bisa membuat sesuatu yang setidaknya sedikit keren. Anda harus banyak berlatih, melakukan eksperimen, membaca artikel, bertanya kepada orang lain yang memiliki pengalaman, dan jangan lupa YouTube (merupakan sarana pembelajaran terbaik untuk orang yang jarang membaca).
 
 ## Metode Pembelajaran
 
