@@ -1,0 +1,412 @@
+\documentclass[a4paper]{article}
+
+\def\Author{UnknownRori}
+\def\Title{Tugas Makalah Web 3.0}
+\def\Lecture{Komunikasi Data}
+\def\Campus{STMIK Amikom Surakarta}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{datetime}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyphenat}
+\usepackage[T1]{fontenc}
+\usepackage{tgbonum}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage[document]{ragged2e}
+\usepackage{array}
+
+% Set the font family to Times New Roman
+\fontfamily{ptm}
+
+\geometry {
+    a4paper,
+    left=30mm,
+    right=30mm,
+}
+\hypersetup {
+      colorlinks=true,
+      linkcolor=black,
+      filecolor=black,
+      urlcolor=black,
+      pdftitle={\Title},
+      pdfauthor={\Author},
+      pdfsubject={Web 3.0},
+      pdfproducer={Latex},
+      pdfcreator={pdflatex},
+}
+\urlstyle{same}
+
+\newdate{date}{15}{05}{2023}
+
+
+\title{\Title}
+\author{\Author}
+
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyfoot[RO]{\thepage/\pageref{LastPage}}
+\fancyfoot[LF]{\textit{
+\small
+\Author
+}}
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+\pagestyle{fancy}
+
+\begin{document}
+
+\begin{center}
+      \Huge
+      \textbf{\Title}
+      \linebreak
+      \Large
+      \textbf{\Lecture}
+      \linebreak
+      \linebreak
+      \linebreak
+
+      \includegraphics[width=10cm]{./Logo.png}
+      \linebreak
+      \linebreak
+      \linebreak
+
+      \Large
+      Disusun Oleh :
+      \linebreak
+      Akbar Hendra Jaya   (2202030549)
+      \linebreak
+    %   Cantika Silvi A. S. (2202030550)
+      \linebreak
+      \linebreak
+      \linebreak
+      \linebreak
+
+      \Huge
+      \textbf{\Campus}
+      \linebreak
+      \normalsize
+      \today
+\end{center}
+
+\pagebreak
+
+% Make sure the size is normal again
+\normalsize
+
+\tableofcontents
+
+\pagebreak
+
+\section{Web 3.0}
+
+\subsection{Mengapa dibuat Web 3.0}
+
+\paragraph{
+      \normalfont
+      Konsep Web 3.0 muncul sebagai jawaban atas keterbatasan dan tantangan yang
+      terkait dengan Web 2.0. Web 2.0, yang menjadi terkenal di awal tahun 2000-an,
+      membawa kemajuan signifikan dalam konten buatan pengguna, media sosial, dan
+      kolaborasi online. Namun, itu juga menyoroti kekurangan tertentu, termasuk
+      masalah yang berkaitan dengan privasi data, sentralisasi, dan kontrol.
+      \linebreak
+      \linebreak
+}
+
+Perkembangan Web 3.0 dapat ditelusuri kembali ke beberapa faktor kunci dan
+kemajuan teknologi :
+
+\begin{enumerate}
+      \item {
+            Kekhawatiran atas kontrol terpusat
+            }
+
+      \item {
+            Interoperabilitas dan solusi lintas rantai
+            }
+
+      \item {
+            Penyimpanan dan komputasi terdesentralisasi
+            }
+\end{enumerate}
+
+\subsection{Definisi Web 3.0}
+
+\normalcolor
+
+\paragraph{
+      \normalfont
+      Web 3.0 adalah generasi internet yang paling baru yang mentargetkan
+      desentralisasi, keamanan, dan user-centric online experience dibanding
+      dengan Web 2.0 yang sekarang ini. Web 2.0 yang merupakan kondisi internet
+      saat ini, memiliki karakteristik platform dan jasa yang bergantung dengan
+      sesuatu yang sentral seperti sosial media, \textit{Search Engines}, dan
+      website \textit{E-Commerce}. Platform ini mengambil dan mengontrol data
+      data pemakai dan pemakai biasanya memiliki kontrol yang terbatas terhadap
+      data pribadinya.
+}
+
+\paragraph{
+      \normalfont
+      Di sisi lain Web 3.0, membayangkan ekosistem web yang lebih
+      desentralisasi. Memakai teknologi seperti \textit{Blockchain}, jaringan
+      desentralisasi (\textit{Decentralized Networks}) dan
+      \textit{Cryptocurrencies} untuk menggeser dinamika kekuatan dan
+      memungkinkan pengguna memiliki kontrol yang lebih besar dan kepemilikan
+      data.
+}
+
+\paragraph{
+      \normalfont
+      Web 3.0 masih merupakan konsep yang berkembang dan realisasi penuh
+      membutuhkan pengembangan teknologi, standar, dan adopsi yang meluas. Ini
+      memiliki potensi untuk membentuk kembali bagaimana kita berinteraksi,
+      bertransaksi dan membagi informasi di internet, memberdayakan individu dan
+      membina lebih banyak lingkungan digital yang terbuka dan inklusif.
+}
+
+
+\subsection{Konsep dan Fitur Web 3.0}
+
+Ada beberapa konsep dan fitur utama di Web 3.0, antara lain :
+
+\begin{enumerate}
+      \item{
+                  \raggedleft\textbf{Desentralisasi (\textit{Decentralization})}
+                  \linebreak
+                  \justifying
+                  Web 3.0 mentarget melakukan desentralisasi berbagai macam
+                  aspek dalam internet, seperti mengurangi ketergantungan oleh
+                  pihak sentral, seperti penyimpanan desentralisasi, komunikasi
+                  dan komunikasi dan berbagai macam fungsionalitas lain.
+            }
+
+      \item {
+            \raggedleft\textbf{Teknologi Blockchain (\textit{Blockchain Technology})}
+            \linebreak
+            \justifying
+            \textit{Blockchain} merupakan pondasi untuk Web 3.0. Ini memungkinkan
+            terciptanya internet yang aman, transparan, dan tahan rusak,
+            memungkinkan kepercayaan dan verifikasi dalam berbagai interaksi
+            online. Teknologi \textit{Blockchain} juga menfasilitasi aplikasi
+            desentralisasi dan \textit{Smart Contracts}.
+            }
+
+      \item {
+            \raggedleft\textbf{\textit{Smart Contracts}}
+            \linebreak
+            \justifying
+            Web 3.0 memperkenalkan kontrak pintar, kontrak pinar ini dijalankan
+            sendiri dengan aturan dan ketentuan yang telah ditentukan sebelumnya
+            yang dikodekan didalamnya. \textit{Smart Contracts} mengotomatiskan
+            pelaksanaan perjanjian dan transaksi, menghilangkan kebutuhan akan
+            perantara dan meningkatkan efisiensi.
+            }
+
+      \item {
+            \raggedleft\textbf{\textit{Cryptocurrencies} dan \textit{Tokenization}}
+            \linebreak
+            \justifying
+            Web 3.0 Menggunakan mata uang kripto dan tokenisasi untuk
+            mengaktifkan model ekonomi baru dan mendorong partisipasi pengguna.
+            \textit{Cryptocurrencies} seperti \textit{Bitcoin} dan
+            \textit{Ethereum} memainkan peran penting dalam menfasilitasi
+            transaksi peer-to-peer dan mendukung aplikasi desentralisasi.
+            }
+
+      \item {
+            \raggedleft\textbf{Meningkatkan Privasi dan Keamanan }
+            \linebreak
+            \justifying
+            Web 3.0 menekankan privasi pengguna dan keamanan data. Melalui
+            teknik kriptografi dan sistem terdesentralisasi, pengguna memiliki
+            kendali lebih besar atas data pribadi mereka dan dapat memilih untuk
+            membagikannya secara selektif atau anonim.
+            }
+
+      \item {
+            \raggedleft\textbf{Interoperabilitas (\textit{Interoperability})}
+            \linebreak
+            \justifying
+            Web 3.0 bertujuan untuk memungkinkan interoperabilitas yang mulus
+            antara berbagai aplikasi, platform, dan \textit{Blockchain}. Hal ini
+            memungkinkan pertukaran data, aset dan layanan yang efisiensi di
+            berbagai jaringan, mendorong pengalaman web yang lebih terhubung dan
+            kohesif.
+            }
+\end{enumerate}
+
+\subsection{Manfaat dan Kekurangan Web 3.0}
+
+Ada beberapa Manfaat dan Kekurangan Web 3.0
+
+\subsubsection{Manfaat Web 3.0}
+
+\begin{enumerate}
+      \item {
+            \raggedleft\textbf{Desentralisasi (\textit{Decentralization}) dan kontrol user}
+            \linebreak
+            \justifying
+            Bertujuan untuk mengalihkan kekuasaan dari otoritas terpusat ke
+            pengguna itu sendiri. Ini memungkinkan individu untuk memiliki
+            kontrol lebih besar atas data, privasi, dan interaksi
+            online mereka.
+            }
+
+      \item {
+            \raggedleft\textbf{Meningkatkan privasi dan keamanan}
+            \linebreak
+            \justifying
+            Web 3.0 menekankan langkah-langkah privasi dan keamanan yang lebih
+            kuat, memanfaatkan teknik \textit{Cryptography} dan sistem
+            terdesentralisasi. Ini dapat memberi pengguna kepercayaan diri yang
+            lebih besar dalam aktivitas online mereka dan mengurangi risiko
+            pelanggaran data dan akses tidak sah.
+            }
+
+      \item {
+            \raggedleft\textbf{Kepercayaan dan Transparansi}
+            \linebreak
+            \justifying
+            Penggunaan teknologi blockchain di Web 3.0 memungkinkan transaksi
+            dan penyimpanan data yang transparan dan anti rusak. Ini menumbuhkan
+            kepercayaan dan akuntabilitas, karena semua peserta dapat
+            memverifikasi integritas informasi.
+            }
+
+      \item {
+            \raggedleft\textbf{Model Ekonomi Baru}
+            \linebreak
+            \justifying
+            Web 3.0 memperkenalkan mata uang kripto dan tokenisasi, memungkinkan
+            model dan peluang ekonomi baru. Ini memungkinkan transaksi
+            peer-to-peer langsung, memfasilitasi crowdfunding melalui penawaran
+            koin awal (\textit{ICO}), dan memungkinkan aplikasi keuangan
+            terdesentralisasi (\textit{DeFi}).
+            }
+
+      \item {
+            \raggedleft\textbf{Interoperabilitas (\textit{Interoperability}) dan
+                  \textit{Seamless Integration}}
+            \linebreak
+            \justifying
+            Interoperabilitas dan integrasi tanpa batas: Web 3.0 bertujuan untuk menciptakan standar dan protokol yang memungkinkan interoperabilitas antara berbagai aplikasi dan jaringan. Hal ini memungkinkan integrasi tanpa batas
+            dan pertukaran data, aset, dan layanan yang efisien di seluruh
+            platform.
+            }
+\end{enumerate}
+
+\subsubsection{Kekurangan Web 3.0}
+
+\begin{enumerate}
+      \item {
+            \raggedleft\textbf{Tingginya kompleksitas}
+            \linebreak
+            \justifying
+            Teknologi Web 3.0, seperti \textit{Blockchain} dan \textit{Smart
+                  Contracts}, dapat menjadi rumit bagi pengguna rata-rata. Ada kurva
+            pembelajaran yang terkait dengan pemahaman dan navigasi sistem dan
+            alat baru ini.
+            }
+
+      \item {
+            \raggedleft\textbf{Tantangan performa dan Skalabilitas}
+            \linebreak
+            \justifying
+            Sistem berbasis \textit{Blockchain}, saat ini, menghadapi
+            skalabilitas dan keterbatasan kinerja. Semakin banyak pengguna
+            bergabung dengan jaringan dan volume transaksi meningkat, efisiensi
+            jaringan \textit{Blockchain} dapat terpengaruh.
+            }
+
+      \item {
+            \raggedleft\textbf{Regulasi dan Masalah Hukum}
+            \linebreak
+            \justifying
+            Sifat terdesentralisasi dari Web 3.0 dapat menimbulkan tantangan
+            dalam hal kepatuhan peraturan, kerangka hukum, dan tata kelola.
+            Masalah yang terkait dengan yurisdiksi, verifikasi identitas, dan
+            pencegahan penipuan dapat muncul.
+            }
+
+      \item {
+            \raggedleft\textbf{Konsumsi Energi}
+            \linebreak
+            \justifying
+            Beberapa jaringan \textit{Blockchain}, terutama yang menggunakan
+            algoritma konsensus \textit{proof-of-work}, memerlukan daya
+            komputasi dan konsumsi energi yang signifikan. Hal ini menimbulkan
+            kekhawatiran tentang dampak lingkungan dari teknologi Web 3.0.
+            }
+
+      \item {
+            \raggedleft\textbf{Kurangnya Standar}
+            \linebreak
+            \justifying
+            Karena Web 3.0 masih berkembang, ada kekurangan standar dan praktik
+            terbaik yang ditetapkan. Ini dapat menyebabkan fragmentasi, masalah
+            interoperabilitas, dan tingkat adopsi yang lebih lambat.
+
+            % Lack of established standards: As Web 3.0 is still evolving, there
+            % is a lack of established standards and best practices. This can lead
+            % to fragmentation, interoperability issues, and slower adoption
+            % rates.
+            }
+\end{enumerate}
+
+\pagebreak
+
+\subsection{Perbedaan dengan Web 2.0}
+
+\begin{center}
+      \begin{tabular}{ || m{10em} | m{10em} | m{12em} || }
+            \hline
+            \multicolumn{1}{|| c | }{\textbf{Karakteristik}} & \multicolumn{1}{c}{\textbf{Web 2.0}}        & \multicolumn{1}{| c ||}{\textbf{Web 3.0}}                                                                            \\
+            \hline\hline
+            Kepusatan                                        & Centralisasi                                & Decentralisasi                                                                                                       \\
+            \hline
+            Privasi dan Kontrol Data                         & Pengguna memiliki kontrol kecil             & Pengguna memiliki kontrol                                                                                            \\
+            \hline
+            Kepercayaan                                      & Kepada pihak yang memberikan jasa           & Kepercayaan dengan pengguna lain dan transparan                                                                      \\
+            \hline
+            Model Ekonomi                                    & E-Commerce, Iklan, Data pengguna            & \textit{Crowdfunding}, \textit{peer-to-peer}, \textit{Decentralized Finance (DeFi) Applications}                     \\
+            \hline
+            Integrasi                                        & Terisolasi, dan kurangnya integrasi         & Mentargetkan menetapkan standar protokol memungkinkan efisiensi dalam pertukaran data                                \\
+            \hline
+            \textit{User Experience}                         & Fokus dalam \textit{User Generated Content} & Memperdayakan pengguna agar berpartisipasi, kepemilikan, dan kontrol yang lebih aktif atas pengalaman digital mereka \\
+            \hline
+            \textit{Status}                                  & Siap Pakai                                  & Masih dalam pembuatan                                                                                                \\
+            \hline
+      \end{tabular}
+\end{center}
+\subsection{Rangkuman}
+
+Web 3.0 adalah generasi internet berikutnya yang bertujuan untuk menjadi lebih
+terdesentralisasi, aman, dan berpusat pada pengguna dibandingkan dengan Web 2.0.
+Ini memanfaatkan teknologi \textit{Blockchain}, \textit{Smart Contracts}, dan \textit{Cryptocurrency} untuk
+mengalihkan kekuatan dari entitas terpusat ke pengguna. Web 3.0 menekankan
+kontrol pengguna, privasi, dan kepemilikan data. Ini memperkenalkan model
+ekonomi baru, memungkinkan integrasi dan interoperabilitas tanpa batas, dan
+meningkatkan langkah-langkah keamanan. Web 3.0 adalah proses pengembangan
+berkelanjutan dengan potensi untuk membentuk kembali internet dan menciptakan
+ekosistem digital yang lebih terbuka dan digerakkan oleh pengguna.
+
+\pagebreak
+
+\section{Daftar Pustaka}
+
+\begin{enumerate}
+      \item \href{https://en.wikipedia.org/wiki/Web3}{\color{blue}https://en.wikipedia.org/wiki/Web3}
+      \item \href{https://en.wikipedia.org/wiki/Web\_2}{\color{blue}https://en.wikipedia.org/wiki/Web\_2}
+      \item \href{https://web3.foundation}{\color{blue}https://web3.foundation}
+      \item \href{https://web3.foundation/about/}{\color{blue}https://web3.foundation/about/}
+      \item ChatGPT
+\end{enumerate}
+
+\end{document}
